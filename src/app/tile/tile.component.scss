@@ -1,0 +1,79 @@
+// @import "libs/common-styles/scss/variables.scss";
+
+.add-item-box {
+  text-align: none;
+  .outer-shell {
+    margin:0;
+    padding: 0;
+    .top-row {
+      width: 100%;
+      &.row {
+        margin-left: 0;
+        margin-right: 0;
+        [class*="col-"] {
+            padding-right: 0;
+            padding-left: 0;
+          }
+    }
+    .left-section{
+        .add-item {
+            height: 100%;
+            width: 98px;
+            border: 1px solid #e8e7e9;
+            background-color: #f4f4f4;
+            border-radius: 4px 4px 0 0;
+            text-align: center;
+            font-size: 14px;
+            span {
+                margin: 3px 15px 0 15px;
+                display: block;
+            }
+        }
+    }
+      .right-buttons {
+        width: 100%;
+        text-align: right;
+        padding-right: 0;
+        .btn.btn-sm {
+          border: 1px solid #e8e7e9;
+          &#add-shop-job {
+            border-radius: 4px 0 0 0;
+          }
+          &#add-job-group {
+            border-radius: 0 4px 0 0;
+          }
+          &#exit-job-group {
+            border: none;
+          }
+        }
+      }
+    }
+    .box-container {
+      background-color: #f4f4f4;
+      min-height: 80px;
+      border: 1px solid #e8e7e9;
+      position: relative;
+      &:before {
+            position: absolute;
+          border: 1px solid black !important;
+          width: 98px;
+      }
+      &.row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .tiles-wrapper {
+          margin-left: 6px;
+          margin-right: 6px;
+          margin-top: 5px;
+          margin-bottom:5px;
+        .wrapper {
+            display: grid;
+            grid-template-columns:
+            repeat(auto-fill, minmax(100px, 1fr));
+            grid-template-areas: "each-tile";
+          }
+      }
+    }
+  }
+}
