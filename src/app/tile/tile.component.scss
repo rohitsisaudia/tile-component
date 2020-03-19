@@ -52,28 +52,32 @@
       background-color: #f4f4f4;
       min-height: 80px;
       border: 1px solid #e8e7e9;
-      position: relative;
-      &:before {
-            position: absolute;
-          border: 1px solid black !important;
-          width: 98px;
-      }
       &.row {
         margin-left: 0;
         margin-right: 0;
       }
-      .tiles-wrapper {
-          margin-left: 6px;
-          margin-right: 6px;
-          margin-top: 5px;
-          margin-bottom:5px;
-        .wrapper {
-            display: grid;
-            grid-template-columns:
-            repeat(auto-fill, minmax(100px, 1fr));
-            grid-template-areas: "each-tile";
-          }
+      .left-tiles-wrapper, .right-tiles-wrapper {
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-top: 5px;
+        margin-bottom:5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+
+      }
+      .left-tiles-wrapper {
+        grid-template-areas: "left-each-tile";
+      }
+      .right-tiles-wrapper {
+        grid-template-areas: "right-each-tile";
+
       }
     }
   }
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
+
 }
