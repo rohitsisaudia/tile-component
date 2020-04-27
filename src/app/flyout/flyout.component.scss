@@ -1,0 +1,46 @@
+.flyout-container {
+    padding: 0 10px;
+    min-width: 200px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    .title {
+        margin: 10px 0;
+        width: 100%;
+        display: inline-flex;
+        .text {
+            font-family: Roboto;
+            font-size: 14px;
+            color: #4d4d4f; //@ad-gray6 or equivalent
+            width: 80%;
+        }
+        .icon {
+            color: #9e9e9f; // $ad-gray4
+            width: 20%;
+            text-align: right;
+        }
+    }
+    .store, .network, .hub {
+        margin: 10px 0;
+        width: 100%;
+        .top-line {
+            width: 100%;
+            height: 16px;
+            display: inline-flex;
+            .icon, .text {
+                text-align: left;
+            }
+            .text {
+                margin-left: 10px;
+            }
+        }
+        .bottom-line {
+            margin-top: 8px;
+        }
+    }
+    .separator {
+        margin: 0 -10px;
+        background-color: black;
+        height: 0.5px;
+    }
+}
