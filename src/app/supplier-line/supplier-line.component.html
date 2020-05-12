@@ -1,0 +1,18 @@
+<div class = "supplier-details" *ngIf = 'visible'>
+  <div class = "wrapper">
+    <div class = "supplier-name">{{supplier}}</div>
+    <div class = "part-status">
+      <div class = "icon">
+        <i class = "{{iconClass}}">X</i>
+      </div>
+      <div class = "description">{{description}}
+        <div class = 'see-more' *ngIf = "status=='pre-order'" (click)="showFlyout()">See More</div>
+          <div class = "flyout" *ngIf = "flyoutVisible">
+            <app-flyout (exitFlyOut)="closeFlyout()"></app-flyout>
+          </div>
+      </div>
+    </div>
+    <div class = "part-cost">Cost: 999</div>
+    <div class = "hide-button" (click)="hideLine()">Hide</div>
+  </div>
+</div>

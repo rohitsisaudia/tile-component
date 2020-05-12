@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TileComponent } from './tile/tile.component';
 import { BoxesComponent } from './boxes/boxes.component';
 import { FlyoutComponent } from './flyout/flyout.component';
+import { SupplierLineComponent } from './supplier-line/supplier-line.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TileComponent,
     BoxesComponent,
-    FlyoutComponent
+    FlyoutComponent,
+    SupplierLineComponent
   ],
   imports: [
     BrowserModule,
